@@ -1,34 +1,44 @@
 {
-    "name":"yosymfony/resource-watcher",
-    "description": "A simple resource watcher using Symfony Finder",
-    "keywords": ["resources","watcher","finder","symfony"],
-    "license": "MIT",
-    "homepage": "http://yosymfony.com",
-    "authors": [
-        {
-            "name": "Victor Puertas",
-            "email": "vpgugr@gmail.com"
-        }
-    ],
-    "require": {
-        "php": ">=5.6",
-        "symfony/finder": "^2.7|^3.0|^4.0|^5.0"
-    },
-    "require-dev": {
-        "symfony/filesystem": "^2.7|^3.0|^4.0|^5.0",
-        "phpunit/phpunit": "^5.7"
-    },
-    "autoload": {
-        "psr-4": {
-            "Yosymfony\\ResourceWatcher\\": "src/"
-        }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "3.0-dev"
-        }
-    },
-    "scripts": {
-        "test": "vendor/bin/phpunit"
+  "name": "yosymfony/resource-watcher",
+  "description": "A simple resource watcher using Symfony Finder",
+  "keywords": [
+    "resources",
+    "watcher",
+    "finder",
+    "symfony"
+  ],
+  "license": "MIT",
+  "homepage": "http://yosymfony.com",
+  "authors": [
+    {
+      "name": "Victor Puertas",
+      "email": "vpgugr@gmail.com"
     }
+  ],
+  "require": {
+    "php": ">8.2",
+    "symfony/finder": "^7.0"
+  },
+  "require-dev": {
+    "symfony/filesystem": "^v7.0",
+    "phpunit/phpunit": "^11.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Yosymfony\\ResourceWatcher\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Yosymfony\\ResourceWatcher\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "3.0-dev"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  }
 }
