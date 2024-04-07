@@ -33,11 +33,6 @@
       "Yosymfony\\ResourceWatcher\\Tests\\": "tests/"
     }
   },
-  "extra": {
-    "branch-alias": {
-      "dev-master": "3.0-dev"
-    }
-  },
   "scripts": {
     "test": "vendor/bin/phpunit"
   }
