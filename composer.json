@@ -17,10 +17,10 @@
   ],
   "require": {
     "php": ">8.2",
-    "symfony/finder": "^6.0|^7.0"
+    "symfony/finder": "^6.0"
   },
   "require-dev": {
-    "symfony/filesystem": "^6.0|^v7.0",
+    "symfony/filesystem": "^6.0",
     "phpunit/phpunit": "^11.0"
   },
   "autoload": {
