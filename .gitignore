@@ -1,4 +1,5 @@
-vendor/
+/vendor/
+/.phpunit.cache
 composer.lock
 phpunit.xml
 .php_cs.cache
