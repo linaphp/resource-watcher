@@ -12,7 +12,7 @@
 namespace LinaPhp\ResourceWatcher\Tests;
 
 use PHPUnit\Framework\TestCase;
-use Yosymfony\ResourceWatcher\Crc32MetaDataHash;
+use LinaPhp\ResourceWatcher\Crc32MetaDataHash;
 
 class Crc32MetaDataHashTest extends TestCase
 {

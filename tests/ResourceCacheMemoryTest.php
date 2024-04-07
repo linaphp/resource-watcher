@@ -12,7 +12,7 @@
 namespace LinaPhp\ResourceWatcher\Tests;
 
 use PHPUnit\Framework\TestCase;
-use Yosymfony\ResourceWatcher\ResourceCacheMemory;
+use LinaPhp\ResourceWatcher\ResourceCacheMemory;
 
 class ResourceCacheMemoryTest extends TestCase
 {

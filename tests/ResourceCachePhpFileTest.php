@@ -14,7 +14,7 @@ namespace LinaPhp\ResourceWatcher\Tests;
 use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Filesystem\Filesystem;
-use Yosymfony\ResourceWatcher\ResourceCachePhpFile;
+use LinaPhp\ResourceWatcher\ResourceCachePhpFile;
 
 class ResourceCachePhpFileTest extends TestCase
 {

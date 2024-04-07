@@ -14,9 +14,9 @@ namespace LinaPhp\ResourceWatcher\Tests;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Finder\Finder;
-use Yosymfony\ResourceWatcher\Crc32ContentHash;
-use Yosymfony\ResourceWatcher\ResourceWatcher;
-use Yosymfony\ResourceWatcher\ResourceCacheMemory;
+use LinaPhp\ResourceWatcher\Crc32ContentHash;
+use LinaPhp\ResourceWatcher\ResourceWatcher;
+use LinaPhp\ResourceWatcher\ResourceCacheMemory;
 
 class ResourceWatcherTest extends TestCase
 {

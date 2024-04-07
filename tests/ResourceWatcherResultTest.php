@@ -12,7 +12,7 @@
 namespace LinaPhp\ResourceWatcher\Tests;
 
 use PHPUnit\Framework\TestCase;
-use Yosymfony\ResourceWatcher\ResourceWatcherResult;
+use LinaPhp\ResourceWatcher\ResourceWatcherResult;
 
 class ResourceWatcherResultTest extends TestCase
 {
