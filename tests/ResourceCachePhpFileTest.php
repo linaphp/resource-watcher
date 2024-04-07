@@ -21,7 +21,7 @@ class ResourceCachePhpFileTest extends TestCase
     private $fs;
     private $tmpDir;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->tmpDir = sys_get_temp_dir() . '/resource-watchers-tests';
         $this->cacheFile = $this->tmpDir . '/cache-file-test.php';
@@ -29,7 +29,7 @@ class ResourceCachePhpFileTest extends TestCase
         $this->fs->mkdir($this->tmpDir);
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         $this->fs->remove($this->tmpDir);
     }
