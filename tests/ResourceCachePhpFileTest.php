@@ -11,6 +11,7 @@
 
 namespace Yosymfony\ResourceWatcher\Tests;
 
+use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Filesystem\Filesystem;
 use Yosymfony\ResourceWatcher\ResourceCachePhpFile;
@@ -70,23 +71,20 @@ class ResourceCachePhpFileTest extends TestCase
         $this->assertEquals($fileContent, "<?php\nreturn ['$filename'=>'$hash',];");
     }
 
-    /**
-     * @expectedException InvalidArgumentException
-     * @expectedExceptionMessage Cache file invalid format.
-     */
     public function testConstructWithAInvalidCacheFileMustThrownAnException()
     {
+        $this->expectException(InvalidArgumentException::class);
+        $this->expectExceptionMessage("Cache file invalid format.");
         $this->fs->dumpFile($this->cacheFile, '');
 
         $rc = new ResourceCachePhpFile($this->cacheFile);
     }
 
-    /**
-     * @expectedException InvalidArgumentException
-     * @expectedExceptionMessage The cache filename must ends with the extension ".php".
-     */
     public function testConstructWithANoPhpFileExtensionMustThrownAnException()
     {
+        $this->expectExceptionMessage("The cache filename must ends with the extension \".php\".");
+        $this->expectException(InvalidArgumentException::class);
+
         $rc = new ResourceCachePhpFile($this->tmpDir . '/cache-file-test.txt');
     }
 }

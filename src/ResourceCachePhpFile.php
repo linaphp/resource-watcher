@@ -65,18 +65,13 @@ class ResourceCachePhpFile extends ResourceCacheMemory
         $this->isInitialized = true;
     }
 
-    /**
-     * @param string $filename
-     *
-     * @return void
-     */
-    private function warmUpCacheFromFile($filename)
+    private function warmUpCacheFromFile(string $filename): void
     {
-        if (preg_match('#\.php$#', $filename) == false) {
+        if (preg_match('#\.php$#', $filename) === 0) {
             throw new \InvalidArgumentException('The cache filename must ends with the extension ".php".');
         }
 
-        if (file_exists($filename) == false) {
+        if (file_exists($filename) === false) {
             $this->hasPendingChasges = true;
 
             return;
@@ -84,7 +79,7 @@ class ResourceCachePhpFile extends ResourceCacheMemory
 
         $fileContent = include($filename);
 
-        if (is_array($fileContent) == false) {
+        if (is_array($fileContent) === false) {
             throw new \InvalidArgumentException('Cache file invalid format.');
         }
 
