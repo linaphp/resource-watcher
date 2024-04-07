@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Yosymfony\ResourceWatcher\Tests;
+namespace LinaPhp\ResourceWatcher\Tests;
 
 use PHPUnit\Framework\TestCase;
 use Yosymfony\ResourceWatcher\Crc32MetaDataHash;

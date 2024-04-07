@@ -10,7 +10,7 @@ A simple resource watcher for getting changes of your filesystem.
 Use [Composer](http://getcomposer.org/) to install this package:
 
 ```bash
-composer require yosymfony/resource-watcher
+composer require linaphp/resource-watcher
 ```
 
 ## How to use?
@@ -20,9 +20,9 @@ to set the criteria to discover file changes.
 
 ```php
 use Symfony\Component\Finder\Finder;
-use Yosymfony\ResourceWatcher\Crc32ContentHash;
-use Yosymfony\ResourceWatcher\ResourceWatcher;
-use Yosymfony\ResourceWatcher\ResourceCachePhpFile;
+use LinaPhp\ResourceWatcher\Crc32ContentHash;
+use LinaPhp\ResourceWatcher\ResourceWatcher;
+use LinaPhp\ResourceWatcher\ResourceCachePhpFile;
 
 $finder = new Finder();
 $finder->files()
@@ -54,8 +54,8 @@ changes producced in the filesystem. The `ResourceWatcherResult` class has the f
 
 ### Hashing alternatives
 Two hashing classes are included in the package: 
-* `Yosymfony\ResourceWatcher\Crc32ContentHash`, which hashes the content of the file
-* `Yosymfony\ResourceWatcher\Crc32MetaDataHash`, which hashes the filename and its last modified timestamp
+* `LinaPhp\ResourceWatcher\Crc32ContentHash`, which hashes the content of the file
+* `LinaPhp\ResourceWatcher\Crc32MetaDataHash`, which hashes the filename and its last modified timestamp
 
 ### Rebuild cache
 

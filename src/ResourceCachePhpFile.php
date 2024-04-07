@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Yosymfony\ResourceWatcher;
+namespace LinaPhp\ResourceWatcher;
 
 /**
  * Resource cache implementation using a PHP file with an array.

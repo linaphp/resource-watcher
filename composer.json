@@ -1,5 +1,5 @@
 {
-  "name": "yosymfony/resource-watcher",
+  "name": "linaphp/resource-watcher",
   "description": "A simple resource watcher using Symfony Finder",
   "keywords": [
     "resources",
@@ -8,7 +8,7 @@
     "symfony"
   ],
   "license": "MIT",
-  "homepage": "http://yosymfony.com",
+  "homepage": "http://lina.daudau.cc",
   "authors": [
     {
       "name": "Victor Puertas",
@@ -25,12 +25,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Yosymfony\\ResourceWatcher\\": "src/"
+      "LinaPhp\\ResourceWatcher\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Yosymfony\\ResourceWatcher\\Tests\\": "tests/"
+      "LinaPhp\\ResourceWatcher\\Tests\\": "tests/"
     }
   },
   "scripts": {

@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Yosymfony\ResourceWatcher;
+namespace LinaPhp\ResourceWatcher;
 
 /**
  * Interface of a resource cache.
