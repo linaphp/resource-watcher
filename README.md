@@ -1,5 +1,7 @@
 A simple resource watcher for getting changes of your filesystem.
 
+** This is a fork of the original package by [Yosymfony](https://github.com/yosymfony/resource-watcher). **
+
 [![Build Status](https://travis-ci.org/yosymfony/resource-watcher.png?branch=master)](https://travis-ci.org/yosymfony/resource-watcher)
 [![Latest Stable Version](https://poser.pugx.org/yosymfony/resource-watcher/v/stable.png)](https://packagist.org/packages/yosymfony/resource-watcher)
 
